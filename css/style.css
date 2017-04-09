@@ -1,0 +1,724 @@
+/* line 7, ../styles/_normalize.sass */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+
+audio:not([controls]) {
+  display: none;
+}
+
+
+[hidden] {
+  display: none;
+}
+
+
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+
+body {
+  margin: 0;
+}
+
+
+body, button, input, select, textarea {
+  font-family: sans-serif;
+}
+
+
+a:focus {
+  outline: 0;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+
+h1 {
+  font-size: 2em;
+}
+
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+
+b, strong {
+  font-weight: bold;
+}
+
+
+blockquote {
+  margin: 1em 40px;
+}
+
+
+dfn {
+  font-style: italic;
+}
+
+
+mark {
+  background: yellow;
+  color: black;
+}
+
+
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: "Courier New", monospace;
+  font-size: 1em;
+}
+
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+q {
+  quotes: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+
+small {
+  font-size: 75%;
+}
+
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+
+sup {
+  top: -0.5em;
+}
+
+
+sub {
+  bottom: -0.25em;
+}
+
+
+ul, ol {
+  margin-left: 0;
+  padding: 0 0 0 40px;
+}
+
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+
+figure {
+  margin: 0;
+}
+
+
+form {
+  margin: 0;
+}
+
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+
+legend {
+  border: 0;
+  *margin-left: -7px;
+}
+
+
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+
+button, input {
+  line-height: normal;
+}
+
+
+button, input[type='button'], input[type='reset'], input[type='submit'] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p */
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+  visibility: hidden;
+}
+
+/* Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements. */
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+  clear: both;
+}
+
+/* For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats. */
+html, body, #dashboardwrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+#dashboardwrapper {
+  background-color: #d5d8d9;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFD5D8D9', endColorstr='#FFEFF1F1');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d5d8d9), color-stop(12%, #d5d8d9), color-stop(35%, #bec0c0), color-stop(42%, #babcbc), color-stop(53%, #b8bbbb), color-stop(57%, #c5c6c6), color-stop(62%, #dcdddd), color-stop(65%, #e1e1e1), color-stop(68%, #dddede), color-stop(73%, #d4d6d6), color-stop(81%, #c2c3c3), color-stop(84%, #c0c2c2), color-stop(88%, #c5c7c7), color-stop(100%, #cacbcb));
+  background-image: -webkit-linear-gradient(top, #d5d8d9 0%, #d5d8d9 12%, #bec0c0 35%, #babcbc 42%, #b8bbbb 53%, #c5c6c6 57%, #dcdddd 62%, #e1e1e1 65%, #dddede 68%, #d4d6d6 73%, #c2c3c3 81%, #c0c2c2 84%, #c5c7c7 88%, #cacbcb 100%);
+  background-image: -moz-linear-gradient(top, #d5d8d9 0%, #d5d8d9 12%, #bec0c0 35%, #babcbc 42%, #b8bbbb 53%, #c5c6c6 57%, #dcdddd 62%, #e1e1e1 65%, #dddede 68%, #d4d6d6 73%, #c2c3c3 81%, #c0c2c2 84%, #c5c7c7 88%, #cacbcb 100%);
+  background-image: -o-linear-gradient(top, #d5d8d9 0%, #d5d8d9 12%, #bec0c0 35%, #babcbc 42%, #b8bbbb 53%, #c5c6c6 57%, #dcdddd 62%, #e1e1e1 65%, #dddede 68%, #d4d6d6 73%, #c2c3c3 81%, #c0c2c2 84%, #c5c7c7 88%, #cacbcb 100%);
+  background-image: -ms-linear-gradient(top, #d5d8d9 0%, #d5d8d9 12%, #bec0c0 35%, #babcbc 42%, #b8bbbb 53%, #c5c6c6 57%, #dcdddd 62%, #e1e1e1 65%, #dddede 68%, #d4d6d6 73%, #c2c3c3 81%, #c0c2c2 84%, #c5c7c7 88%, #cacbcb 100%);
+  background-image: linear-gradient(top, #d5d8d9 0%, #d5d8d9 12%, #bec0c0 35%, #babcbc 42%, #b8bbbb 53%, #c5c6c6 57%, #dcdddd 62%, #e1e1e1 65%, #dddede 68%, #d4d6d6 73%, #c2c3c3 81%, #c0c2c2 84%, #c5c7c7 88%, #cacbcb 100%);
+  background-size: cover;
+}
+
+#dashboardwrapper * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
+#dashboardwrapper .backdropTop {
+  position: absolute;
+  height: 65%;
+  width: 100%;
+  background: url("Update_your_fucking_browser");
+}
+
+
+header {
+  height: 100px;
+}
+
+
+#panels-area {
+  max-width: 1000px;
+  height: 600px;
+  margin: auto;
+  position: relative;
+}
+
+
+.global-nav-list,
+.global-panel-list {
+  padding: 0;
+  margin: 0;
+}
+
+
+#global-nav {
+  width: 1000px;
+  position: absolute;
+  left: 50%;
+  margin-left: -500px;
+}
+
+#global-nav .global-nav-list {
+  height: 80px;
+}
+
+#global-nav .global-nav-list .global-nav-list-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#global-nav .global-nav-list .global-nav-list-item .global-nav-list-item-link {
+  display: inline-block;
+  border-bottom: 0;
+  text-decoration: none;
+  padding: 40px;
+  height: 40px;
+  color: #838383;
+  font-size: 20px;
+  font-family: "Exo", sans-serif;
+}
+
+#global-nav .global-nav-list .global-nav-list-item .global-nav-list-item-link:first-child {
+  padding-left: 0;
+}
+
+#global-nav .global-nav-list .global-nav-list-item .global-nav-list-item-link.-active {
+  color: white;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+.global-panel-list {
+  position: absolute;
+  width: 15000px;
+  height: 100%;
+}
+
+.global-panel-list[data-position='#search'] {
+  left: 0;
+}
+
+.global-panel-list[data-position='#search'] #search .tile-list {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+}
+
+.global-panel-list[data-position='#About'] {
+  left: -1100px;
+}
+
+.global-panel-list[data-position='#About'] #About .tile-list {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+}
+
+.global-panel-list[data-position='#FAQ'] {
+  left: -2200px;
+}
+
+.global-panel-list[data-position='#FAQ'] #FAQ .tile-list {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+}
+
+.global-panel-list[data-position='#Buy'] {
+  left: -3300px;
+}
+
+.global-panel-list[data-position='#Buy'] #Buy .tile-list {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+}
+
+.global-panel-list[data-position='#Info'] {
+  left: -1100px;
+}
+
+.global-panel-list[data-position='#Info'] #Info .tile-list {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+}
+
+.global-panel-list[data-position='#Users'] {
+  left: -2200px;
+}
+
+.global-panel-list[data-position='#Users'] #Users .tile-list {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+}
+
+.global-panel-list[data-position='#PanelDownloads'] {
+  left: -3300px;
+}
+
+.global-panel-list[data-position='#PanelDownloads'] #PanelDownloads .tile-list {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+}
+
+.global-panel-list[data-position='#Downloads'] {
+  left: -4400px;
+}
+
+.global-panel-list[data-position='#Downloads'] #Downloads .tile-list {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+}
+
+.global-panel-list[data-position='#Proof'] {
+  left: -5500px;
+}
+
+.global-panel-list[data-position='#Proof'] #Proof .tile-list {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+}
+
+.global-panel-list[data-position='#Account'] {
+  left: -6600px;
+}
+
+.global-panel-list[data-position='#Account'] #Account .tile-list {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+}
+
+
+.global-panel-list .global-panel-list-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 1000px;
+  margin: auto;
+  height: 600px;
+  position: absolute;
+}
+
+.global-panel-list .global-panel-list-item#search {
+  left: 0;
+}
+
+.global-panel-list .global-panel-list-item#About {
+  left: 1100px;
+}
+
+.global-panel-list .global-panel-list-item#FAQ {
+  left: 2200px;
+}
+
+.global-panel-list .global-panel-list-item#Buy {
+  left: 3300px;
+}
+
+.global-panel-list .global-panel-list-item#Info {
+  left: 1100px;
+}
+
+.global-panel-list .global-panel-list-item#Users {
+  left: 2200px;
+}
+
+.global-panel-list .global-panel-list-item#PanelDownloads {
+  left: 3300px;
+}
+
+.global-panel-list .global-panel-list-item#Downloads {
+  left: 4400px;
+}
+
+.global-panel-list .global-panel-list-item#Proof {
+  left: 5500px;
+}
+
+.global-panel-list .global-panel-list-item#Account {
+  left: 6600px;
+}
+
+
+.tile-list {
+  width: 85%;
+  height: 85%;
+  margin: auto;
+  top: 50%;
+  position: relative;
+  margin-top: -24%;
+}
+
+.tile-list::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  -webkit-box-shadow: gray 0px 50px 50px;
+  -moz-box-shadow: gray 0px 50px 50px;
+  box-shadow: gray 0px 50px 50px;
+}
+
+.tile-list img {
+	position: fixed; /* or absolute */
+  top: 20%;
+  left: 30%;
+}
+
+.tile-list .tile-item {
+  background: #229B22;
+  width: 23%;
+  height: 33.3%;
+  display: inline-block;
+  float: left;
+  border: 2px solid transparent;
+  text-align: left;
+  white-space: nowrap;
+  padding-right: 4px;
+  padding-left: 4px;
+  padding-bottom: 4px;
+  font-family: “Segoe UI”,Arial,Helvetica,sans-serif;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  margin-left: 4px;
+  color: #222;
+  transition: 1.6s;
+  transform-style: preserve-3d;
+}
+
+.tile-list .tile-item:hover {
+  background: #0C830C;
+  transform: rotateY(45deg);
+}
+
+.searchForm {
+  width: 1000px;
+}
+
+.searchForm input {
+  width: 100%;
+  height: 20%;
+  padding: 0 5%;
+  border-radius: 20px;
+  border: none;
+  font-size: 200%;
+  color: black;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10%;
+}
+
+section {
+  transform-origin: center top;
+  -webkit-transform: scale(.7);
+}
+#q1,#q2,#q3,#q4,#q5 {
+  border:1px solid #FFF;  
+  color:#EEE;
+  background:#333;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  
+}
+#buytime,#buytoken {
+  transform: scale(0.8);
+}
+.popup_visible #buytime,.popup_visible #buytoken {
+  transform: scale(1);
+}
+
+table#t01 {
+    width:100%;
+}
+table#t01, th#t01, td#t01 {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th#t01, td#t01 {
+    padding: 5px;
+    text-align: center;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+	background-color:#ccc;
+}
+table#t01 th	{
+    background-color: black;
+    color: white;
+}
+#tableScroll {
+	width: 100%;
+	max-height: 400px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+#tileText {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+	padding-top: 8px;
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-bottom: 8px;
+}
+#moneyStats, #userStats {
+	border: 1px solid black;
+	padding-top: 8px;
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-bottom: 8px;
+	background:#333;
+	color: white;
+	
+}  
